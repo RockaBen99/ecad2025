@@ -48,3 +48,4 @@
 
 # build files
 */obj_dir/
+**/build/
