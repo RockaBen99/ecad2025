@@ -45,3 +45,6 @@
 
 # email history files
 **/*~
+
+# build files
+*/obj_dir/
