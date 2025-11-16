@@ -13,8 +13,8 @@ main:
 
 
 # *** Do some work ***
-        li a0, 10 # a0 = 32
-        li a1, 9 # a1 = 3
+        li a0, 6920 # a0 = 32
+        li a1, 0 # a1 = 3
         call div
         DEBUG_PRINT a0 # display the quotient
         DEBUG_PRINT a1 # display the remainder
