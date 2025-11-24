@@ -47,5 +47,5 @@
 **/*~
 
 # build files
-*/obj_dir/
+**/obj_dir/
 **/build/
