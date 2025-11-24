@@ -19,7 +19,7 @@ div:
     # DEBUG_PRINT a1
 
     beqz a1, divzero
-    blt a0, a1, divlt
+    # blt a0, a1, divlt
 
     li t0, 0 # Q := 0
     li t1, 0 # R := 0
