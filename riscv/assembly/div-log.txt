@@ -1,0 +1,142 @@
+time=00000022  pc=0x00000078:   ADDI    sp, sp, -32             sp := 0x0000ffbc, sp = 0x0000ffdc
+time=00000023  pc=0x0000007c:   SW      ra, 28(sp)              mem[0000ffd8] := 0x00000118, sp = 0x0000ffbc, ra = 0x00000118
+time=00000024  pc=0x00000080:   SW      fp, 24(sp)              mem[0000ffd4] := 0x00000000, sp = 0x0000ffbc, fp = 0x00000000
+time=00000025  pc=0x00000084:   BEQ     a1, zero, 0x000000e4    a1 = 0x00000003, branch not taken
+time=00000026  pc=0x00000088:   ADDI    t0, zero, 0             t0 := 0x00000000, 
+time=00000027  pc=0x0000008c:   ADDI    t1, zero, 0             t1 := 0x00000000, 
+time=00000028  pc=0x00000090:   ADDI    t2, zero, 0             t2 := 0x00000000, 
+time=00000029  pc=0x00000094:   ADDI    t3, a0, 0               t3 := 0x00000020, a0 = 0x00000020
+time=00000030  pc=0x00000098:   BEQ     t3, zero, 0x000000a8    t3 = 0x00000020, branch not taken
+time=00000031  pc=0x0000009c:   ADDI    t2, t2, 1               t2 := 0x00000001, t2 = 0x00000000
+time=00000032  pc=0x000000a0:   SRLI    t3, t3, 1               t3 := 0x00000010, t3 = 0x00000020
+time=00000033  pc=0x000000a4:   JAL     zero, -12                       target = 0x00000098
+time=00000034  pc=0x000000a8:   ---bubble number 10 ---
+time=00000035  pc=0x000000ac:   ---bubble number 11 ---
+time=00000036  pc=0x000000b0:   ---bubble number 12 ---
+time=00000037  pc=0x00000098:   BEQ     t3, zero, 0x000000a8    t3 = 0x00000010, branch not taken
+time=00000038  pc=0x0000009c:   ADDI    t2, t2, 1               t2 := 0x00000002, t2 = 0x00000001
+time=00000039  pc=0x000000a0:   SRLI    t3, t3, 1               t3 := 0x00000008, t3 = 0x00000010
+time=00000040  pc=0x000000a4:   JAL     zero, -12                       target = 0x00000098
+time=00000041  pc=0x000000a8:   ---bubble number 13 ---
+time=00000042  pc=0x000000ac:   ---bubble number 14 ---
+time=00000043  pc=0x000000b0:   ---bubble number 15 ---
+time=00000044  pc=0x00000098:   BEQ     t3, zero, 0x000000a8    t3 = 0x00000008, branch not taken
+time=00000045  pc=0x0000009c:   ADDI    t2, t2, 1               t2 := 0x00000003, t2 = 0x00000002
+time=00000046  pc=0x000000a0:   SRLI    t3, t3, 1               t3 := 0x00000004, t3 = 0x00000008
+time=00000047  pc=0x000000a4:   JAL     zero, -12                       target = 0x00000098
+time=00000048  pc=0x000000a8:   ---bubble number 16 ---
+time=00000049  pc=0x000000ac:   ---bubble number 17 ---
+time=00000050  pc=0x000000b0:   ---bubble number 18 ---
+time=00000051  pc=0x00000098:   BEQ     t3, zero, 0x000000a8    t3 = 0x00000004, branch not taken
+time=00000052  pc=0x0000009c:   ADDI    t2, t2, 1               t2 := 0x00000004, t2 = 0x00000003
+time=00000053  pc=0x000000a0:   SRLI    t3, t3, 1               t3 := 0x00000002, t3 = 0x00000004
+time=00000054  pc=0x000000a4:   JAL     zero, -12                       target = 0x00000098
+time=00000055  pc=0x000000a8:   ---bubble number 19 ---
+time=00000056  pc=0x000000ac:   ---bubble number 20 ---
+time=00000057  pc=0x000000b0:   ---bubble number 21 ---
+time=00000058  pc=0x00000098:   BEQ     t3, zero, 0x000000a8    t3 = 0x00000002, branch not taken
+time=00000059  pc=0x0000009c:   ADDI    t2, t2, 1               t2 := 0x00000005, t2 = 0x00000004
+time=00000060  pc=0x000000a0:   SRLI    t3, t3, 1               t3 := 0x00000001, t3 = 0x00000002
+time=00000061  pc=0x000000a4:   JAL     zero, -12                       target = 0x00000098
+time=00000062  pc=0x000000a8:   ---bubble number 22 ---
+time=00000063  pc=0x000000ac:   ---bubble number 23 ---
+time=00000064  pc=0x000000b0:   ---bubble number 24 ---
+time=00000065  pc=0x00000098:   BEQ     t3, zero, 0x000000a8    t3 = 0x00000001, branch not taken
+time=00000066  pc=0x0000009c:   ADDI    t2, t2, 1               t2 := 0x00000006, t2 = 0x00000005
+time=00000067  pc=0x000000a0:   SRLI    t3, t3, 1               t3 := 0x00000000, t3 = 0x00000001
+time=00000068  pc=0x000000a4:   JAL     zero, -12                       target = 0x00000098
+time=00000069  pc=0x000000a8:   ---bubble number 25 ---
+time=00000070  pc=0x000000ac:   ---bubble number 26 ---
+time=00000071  pc=0x000000b0:   ---bubble number 27 ---
+time=00000072  pc=0x00000098:   BEQ     t3, zero, 0x000000a8    t3 = 0x00000000, branch     taken
+time=00000073  pc=0x0000009c:   ---bubble number 28 ---
+time=00000074  pc=0x000000a0:   ---bubble number 29 ---
+time=00000075  pc=0x000000a4:   ---bubble number 30 ---
+time=00000076  pc=0x000000a8:   ADDI    t2, t2, -1              t2 := 0x00000005, t2 = 0x00000006
+time=00000077  pc=0x000000ac:   BLT     t2, zero, 0x000000d8    t2 = 0x00000005, branch not taken
+time=00000078  pc=0x000000b0:   SLI     t1, t1, 1               t1 := 0x00000000, t1 = 0x00000000
+time=00000079  pc=0x000000b4:   SRL     t3, a0, t2              t3 := 0x00000001, a0 = 0x00000020, t2 = 0x00000005
+time=00000080  pc=0x000000b8:   ANDI    t3, t3, 1               t3 := 0x00000001, t3 = 0x00000001
+time=00000081  pc=0x000000bc:   ADD     t1, t1, t3              t1 := 0x00000001, t1 = 0x00000000, t3 = 0x00000001
+time=00000082  pc=0x000000c0:   BLT     t1, a1, 0x000000a8      t1 = 0x00000001, a1 = 0x00000003, branch     taken
+time=00000083  pc=0x000000c4:   ---bubble number 31 ---
+time=00000084  pc=0x000000c8:   ---bubble number 32 ---
+time=00000085  pc=0x000000cc:   ---bubble number 33 ---
+time=00000086  pc=0x000000a8:   ADDI    t2, t2, -1              t2 := 0x00000004, t2 = 0x00000005
+time=00000087  pc=0x000000ac:   BLT     t2, zero, 0x000000d8    t2 = 0x00000004, branch not taken
+time=00000088  pc=0x000000b0:   SLI     t1, t1, 1               t1 := 0x00000002, t1 = 0x00000001
+time=00000089  pc=0x000000b4:   SRL     t3, a0, t2              t3 := 0x00000002, a0 = 0x00000020, t2 = 0x00000004
+time=00000090  pc=0x000000b8:   ANDI    t3, t3, 1               t3 := 0x00000000, t3 = 0x00000002
+time=00000091  pc=0x000000bc:   ADD     t1, t1, t3              t1 := 0x00000002, t1 = 0x00000002, t3 = 0x00000000
+time=00000092  pc=0x000000c0:   BLT     t1, a1, 0x000000a8      t1 = 0x00000002, a1 = 0x00000003, branch     taken
+time=00000093  pc=0x000000c4:   ---bubble number 34 ---
+time=00000094  pc=0x000000c8:   ---bubble number 35 ---
+time=00000095  pc=0x000000cc:   ---bubble number 36 ---
+time=00000096  pc=0x000000a8:   ADDI    t2, t2, -1              t2 := 0x00000003, t2 = 0x00000004
+time=00000097  pc=0x000000ac:   BLT     t2, zero, 0x000000d8    t2 = 0x00000003, branch not taken
+time=00000098  pc=0x000000b0:   SLI     t1, t1, 1               t1 := 0x00000004, t1 = 0x00000002
+time=00000099  pc=0x000000b4:   SRL     t3, a0, t2              t3 := 0x00000004, a0 = 0x00000020, t2 = 0x00000003
+time=00000100  pc=0x000000b8:   ANDI    t3, t3, 1               t3 := 0x00000000, t3 = 0x00000004
+time=00000101  pc=0x000000bc:   ADD     t1, t1, t3              t1 := 0x00000004, t1 = 0x00000004, t3 = 0x00000000
+time=00000102  pc=0x000000c0:   BLT     t1, a1, 0x000000a8      t1 = 0x00000004, a1 = 0x00000003, branch not taken
+time=00000103  pc=0x000000c4:   SUB     t1, t1, a1              t1 := 0x00000001, t1 = 0x00000004, a1 = 0x00000003
+time=00000104  pc=0x000000c8:   ADDI    t3, zero, 1             t3 := 0x00000001, 
+time=00000105  pc=0x000000cc:   SL      t3, t3, t2              t3 := 0x00000008, t3 = 0x00000001, t2 = 0x00000003
+time=00000106  pc=0x000000d0:   ADD     t0, t0, t3              t0 := 0x00000008, t0 = 0x00000000, t3 = 0x00000008
+time=00000107  pc=0x000000d4:   JAL     zero, -44                       target = 0x000000a8
+time=00000108  pc=0x000000d8:   ---bubble number 37 ---
+time=00000109  pc=0x000000dc:   ---bubble number 38 ---
+time=00000110  pc=0x000000e0:   ---bubble number 39 ---
+time=00000111  pc=0x000000a8:   ADDI    t2, t2, -1              t2 := 0x00000002, t2 = 0x00000003
+time=00000112  pc=0x000000ac:   BLT     t2, zero, 0x000000d8    t2 = 0x00000002, branch not taken
+time=00000113  pc=0x000000b0:   SLI     t1, t1, 1               t1 := 0x00000002, t1 = 0x00000001
+time=00000114  pc=0x000000b4:   SRL     t3, a0, t2              t3 := 0x00000008, a0 = 0x00000020, t2 = 0x00000002
+time=00000115  pc=0x000000b8:   ANDI    t3, t3, 1               t3 := 0x00000000, t3 = 0x00000008
+time=00000116  pc=0x000000bc:   ADD     t1, t1, t3              t1 := 0x00000002, t1 = 0x00000002, t3 = 0x00000000
+time=00000117  pc=0x000000c0:   BLT     t1, a1, 0x000000a8      t1 = 0x00000002, a1 = 0x00000003, branch     taken
+time=00000118  pc=0x000000c4:   ---bubble number 40 ---
+time=00000119  pc=0x000000c8:   ---bubble number 41 ---
+time=00000120  pc=0x000000cc:   ---bubble number 42 ---
+time=00000121  pc=0x000000a8:   ADDI    t2, t2, -1              t2 := 0x00000001, t2 = 0x00000002
+time=00000122  pc=0x000000ac:   BLT     t2, zero, 0x000000d8    t2 = 0x00000001, branch not taken
+time=00000123  pc=0x000000b0:   SLI     t1, t1, 1               t1 := 0x00000004, t1 = 0x00000002
+time=00000124  pc=0x000000b4:   SRL     t3, a0, t2              t3 := 0x00000010, a0 = 0x00000020, t2 = 0x00000001
+time=00000125  pc=0x000000b8:   ANDI    t3, t3, 1               t3 := 0x00000000, t3 = 0x00000010
+time=00000126  pc=0x000000bc:   ADD     t1, t1, t3              t1 := 0x00000004, t1 = 0x00000004, t3 = 0x00000000
+time=00000127  pc=0x000000c0:   BLT     t1, a1, 0x000000a8      t1 = 0x00000004, a1 = 0x00000003, branch not taken
+time=00000128  pc=0x000000c4:   SUB     t1, t1, a1              t1 := 0x00000001, t1 = 0x00000004, a1 = 0x00000003
+time=00000129  pc=0x000000c8:   ADDI    t3, zero, 1             t3 := 0x00000001, 
+time=00000130  pc=0x000000cc:   SL      t3, t3, t2              t3 := 0x00000002, t3 = 0x00000001, t2 = 0x00000001
+time=00000131  pc=0x000000d0:   ADD     t0, t0, t3              t0 := 0x0000000a, t0 = 0x00000008, t3 = 0x00000002
+time=00000132  pc=0x000000d4:   JAL     zero, -44                       target = 0x000000a8
+time=00000133  pc=0x000000d8:   ---bubble number 43 ---
+time=00000134  pc=0x000000dc:   ---bubble number 44 ---
+time=00000135  pc=0x000000e0:   ---bubble number 45 ---
+time=00000136  pc=0x000000a8:   ADDI    t2, t2, -1              t2 := 0x00000000, t2 = 0x00000001
+time=00000137  pc=0x000000ac:   BLT     t2, zero, 0x000000d8    t2 = 0x00000000, branch not taken
+time=00000138  pc=0x000000b0:   SLI     t1, t1, 1               t1 := 0x00000002, t1 = 0x00000001
+time=00000139  pc=0x000000b4:   SRL     t3, a0, t2              t3 := 0x00000020, a0 = 0x00000020, t2 = 0x00000000
+time=00000140  pc=0x000000b8:   ANDI    t3, t3, 1               t3 := 0x00000000, t3 = 0x00000020
+time=00000141  pc=0x000000bc:   ADD     t1, t1, t3              t1 := 0x00000002, t1 = 0x00000002, t3 = 0x00000000
+time=00000142  pc=0x000000c0:   BLT     t1, a1, 0x000000a8      t1 = 0x00000002, a1 = 0x00000003, branch     taken
+time=00000143  pc=0x000000c4:   ---bubble number 46 ---
+time=00000144  pc=0x000000c8:   ---bubble number 47 ---
+time=00000145  pc=0x000000cc:   ---bubble number 48 ---
+time=00000146  pc=0x000000a8:   ADDI    t2, t2, -1              t2 := 0xffffffff, t2 = 0x00000000
+time=00000147  pc=0x000000ac:   BLT     t2, zero, 0x000000d8    t2 = 0xffffffff, branch     taken
+time=00000148  pc=0x000000b0:   ---bubble number 49 ---
+time=00000149  pc=0x000000b4:   ---bubble number 50 ---
+time=00000150  pc=0x000000b8:   ---bubble number 51 ---
+time=00000151  pc=0x000000d8:   ADDI    a0, t0, 0               a0 := 0x0000000a, t0 = 0x0000000a
+time=00000152  pc=0x000000dc:   ADDI    a1, t1, 0               a1 := 0x00000002, t1 = 0x00000002
+time=00000153  pc=0x000000e0:   JAL     zero, 20                        target = 0x000000f4
+time=00000154  pc=0x000000e4:   ---bubble number 52 ---
+time=00000155  pc=0x000000e8:   ---bubble number 53 ---
+time=00000156  pc=0x000000ec:   ---bubble number 54 ---
+time=00000157  pc=0x000000f4:   LW      ra, 28(sp)              ra := 0x00000118 = mem[0x0000ffd8], sp = 0x0000ffbc
+time=00000158  pc=0x000000f8:   LW      fp, 24(sp)              fp := 0x00000000 = mem[0x0000ffd4], sp = 0x0000ffbc
+time=00000159  pc=0x000000fc:   ADDI    sp, sp, 32              sp := 0x0000ffdc, sp = 0x0000ffbc
+time=00000160  pc=0x00000100:   JALR    zero, ra, 0             , ra = 0x00000118, target = 0x00000118
+time=00000161  pc=0x00000104:   ---bubble number 55 ---
+time=00000162  pc=0x00000108:   ---bubble number 56 ---
+time=00000163  pc=0x0000010c:   ---bubble number 57 ---
